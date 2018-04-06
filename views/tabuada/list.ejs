@@ -1,0 +1,14 @@
+<% include ../partials/header %>
+
+      <div class="starter-template">
+        <h1>Escolha o seu número</h1>
+        <table class="table table-striped table-bordered table-hover">
+        <% numeros.map(i => { %>
+          <tr>
+              <td> <a href="/tabuadas/do/<%= i %>">Tabuada do <%= i %></a> </td>
+          </tr>
+        <% }) %>  
+        </table>
+      </div>
+
+<% include ../partials/footer %>
